@@ -97,7 +97,7 @@
       </section>
 
       <section class="history">
-        <h2 class="section-title">Geschichte</h2>
+        <h2 class="section-title history__title">Geschichte</h2>
         <div class="history-slider">
           <!-- 1 -->
           <div class="history-slide">
@@ -231,7 +231,9 @@
           Wenn Sie Fragen haben, schreiben Sie uns und<br />erhalten Sie eine
           schnelle Antwort.
         </p>
-        <button type="button" class="button">Schreib uns</button>
+        <button type="button" class="button questions__button">
+          Schreib uns
+        </button>
       </section>
     </main>
 
@@ -266,6 +268,39 @@
         <div class="close-btn__bar"></div>
         <div class="close-btn__bar"></div>
       </div>
+    </div>
+
+    <div class="feedback-popup">
+      <div class="feedback-overlay"></div>
+      <form action="#" class="feedback-content">
+        <h3 class="feedback-content__title">Rückkopplung</h3>
+        <input
+          class="feedback-content__input popup-input-1"
+          type="text"
+          placeholder="Ihr Name"
+        />
+        <input
+          class="feedback-content__input popup-input-2"
+          type="email"
+          placeholder="Ihre E-Mail"
+        />
+        <textarea
+          class="feedback-content__textarea popup-input-3"
+          rows="7"
+          placeholder="Ihre Frage"
+        ></textarea>
+        <button class="button feedback-popup__button" type="submit">
+          senden
+        </button>
+        <p class="feedback-conent__info">
+          Durch Klicken auf die Schaltfläche stimmen Sie der<br />Verarbeitung
+          personenbezogener Daten zu.
+        </p>
+        <div class="feedback-popup__close">
+          <div class="feedback-popup__close__bar feedback-bar-1"></div>
+          <div class="feedback-popup__close__bar feedback-bar-2"></div>
+        </div>
+      </form>
     </div>
 
     <!-- jquery.js -->

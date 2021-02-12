@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kruger</title>
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="logo">
+        <a class="logo__link" href="index.html">
+          <img class="logo__img" src="images/logo.png" alt="logo kruger" />
+        </a>
+      </div>
+      <div class="menu-burger">
+        <div class="menu-burger-open menu__icon">
+          <div class="bar bar-1"></div>
+          <div class="bar bar-2"></div>
+          <div class="bar bar-3"></div>
+        </div>
+        <p class="menu-burger__label">Menü</p>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+      <div class="section-intro">
+        <h2 class="section-title">Standardsensor</h2>
+      </div>
+
+      <div class="goods">
+        <div class="goods-card">
+          <div class="goods-picture">
+            <img
+              class="goods-picture__img"
+              src="images/sensor-1.jpg"
+              alt="goods image"
+            />
+          </div>
+          <div class="goods-content">
+            <h3 class="goods-content__name">Feuchtigkeitssensor</h3>
+            <p class="goods-content__about">
+              Der automatische Scheibenwischerbetrieb gewährleistet ein
+              zuverlässiges Feuchtigkeitssensormodul
+            </p>
+          </div>
+        </div>
+        <div class="goods-card">
+          <div class="goods-picture">
+            <img
+              class="goods-picture__img"
+              src="images/sensor-2.jpg"
+              alt="goods image"
+            />
+          </div>
+          <div class="goods-content">
+            <h3 class="goods-content__name">Licht- und Feuchtigkeitssensor</h3>
+            <p class="goods-content__about">
+              Dämmerung - Lichter an Immer die Straße sehen, der Lichtsensor
+              hilft
+            </p>
+          </div>
+        </div>
+        <div class="goods-card">
+          <div class="goods-picture">
+            <img
+              class="goods-picture__img"
+              src="images/sensor-3.jpg"
+              alt="goods image"
+            />
+          </div>
+          <div class="goods-content">
+            <h3 class="goods-content__name">Ein Gerät, viele Lösungen</h3>
+            <p class="goods-content__about">
+              Automatisches Ein- und Ausschalten von Scheinwerfern und
+              Scheibenwischern mit einem automatisierten Standardsensorsystem
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <section class="questions">
+        <h2 class="questions__title">Haben Sie noch Fragen?</h2>
+        <p class="questions__text">
+          Wenn Sie Fragen haben, schreiben Sie uns und<br />erhalten Sie eine
+          schnelle Antwort.
+        </p>
+        <button type="button" class="button questions__button">
+          Schreib uns
+        </button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__text">© 2021 krugerwelt.de</p>
+    </footer>
+
+    <div class="menu">
+      <div class="overlay"></div>
+      <div class="menu-content">
+        <ul class="menu-content__list">
+          <li class="menu-content__item">
+            <a class="menu-content__link" href="#">Zuhause</a>
+          </li>
+          <li class="menu-content__item">
+            <a class="menu-content__link" href="#">Produkte</a>
+          </li>
+          <li class="menu-content__item">
+            <a class="menu-content__link" href="#">Bedienung</a>
+          </li>
+          <li class="menu-content__item">
+            <a class="menu-content__link" href="#">Rückkopplung</a>
+          </li>
+        </ul>
+        <div class="language">
+          <a href="#" class="language__link language__de language_active">DE</a>
+          <span class="languange__separator">/</span>
+          <a href="#" class="language__link language__en">EN</a>
+        </div>
+      </div>
+      <div class="close-btn">
+        <div class="close-btn__bar"></div>
+        <div class="close-btn__bar"></div>
+      </div>
+    </div>
+
+    <div class="feedback-popup">
+      <div class="feedback-overlay"></div>
+      <form action="#" class="feedback-content">
+        <h3 class="feedback-content__title">Rückkopplung</h3>
+        <input
+          class="feedback-content__input popup-input-1"
+          type="text"
+          placeholder="Ihr Name"
+        />
+        <input
+          class="feedback-content__input popup-input-2"
+          type="email"
+          placeholder="Ihre E-Mail"
+        />
+        <textarea
+          class="feedback-content__textarea popup-input-3"
+          rows="7"
+          placeholder="Ihre Frage"
+        ></textarea>
+        <button class="button feedback-popup__button" type="submit">
+          senden
+        </button>
+        <p class="feedback-conent__info">
+          Durch Klicken auf die Schaltfläche stimmen Sie der<br />Verarbeitung
+          personenbezogener Daten zu.
+        </p>
+        <div class="feedback-popup__close">
+          <div class="feedback-popup__close__bar feedback-bar-1"></div>
+          <div class="feedback-popup__close__bar feedback-bar-2"></div>
+        </div>
+      </form>
+    </div>
+
+    <!-- main.js -->
+    <script src="assets/js/core.js" defer></script>
+  </body>
+</html>
