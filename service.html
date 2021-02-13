@@ -49,7 +49,7 @@
           </p>
         </div>
 
-        <form class="user-form" action="#">
+        <form class="user-form" onsubmit="toggleValidatePopup(); return false;" action="#">
           <input
             class="user-input user-form__input"
             type="text"
@@ -62,7 +62,9 @@
             placeholder="Seriennummer"
             required
           />
-          <button class="button" type="submit">überprüfen</button>
+          <button class="button" type="submit"">
+            überprüfen
+          </button>
         </form>
       </section>
 
@@ -161,6 +163,18 @@
           <div class="feedback-popup__close__bar feedback-bar-2"></div>
         </div>
       </form>
+    </div>
+
+    <div class="serial-valid-popup">
+      <div class="serial-popup-overlay"></div>
+      <div class="serial-popup-content">
+        <div class="serial-popup-side-top serial-side">
+          <p class="serial-popup-side-top__text">Lorem ipsum</p>
+        </div>
+        <div class="serial-popup-side-bottom serial-side">
+          <a class="serial-popup-side-bottom__close" href="#" onclick="return false;">Close</a>
+        </div>
+      </div>
     </div>
 
     <!-- main.js -->

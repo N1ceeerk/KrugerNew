@@ -162,3 +162,26 @@ function toggleMenu() {
     }, 500);
   }
 }
+
+// Всплывающее окно валидации серийного номера
+const serialValidPopup = document.querySelector(".serial-valid-popup");
+
+function toggleValidatePopup() {
+  // e.preventDefault();
+  serialValidPopup.classList.toggle("serial-valid-popup_show");
+}
+
+if (serialValidPopup) {
+  // Оверлей окна ввода серийного номера
+  const serialValidOverlay = document.querySelector(".serial-popup-overlay");
+
+  const serialVaildCloseBtn = document.querySelector(
+    ".serial-popup-side-bottom__close"
+  );
+
+  // Закрытие всплывающего окна при клике на оверлей
+  serialValidOverlay.addEventListener("click", toggleValidatePopup);
+
+  // Закрытие всплывающего окна при клике на close
+  serialVaildCloseBtn.addEventListener("click", toggleValidatePopup);
+}
