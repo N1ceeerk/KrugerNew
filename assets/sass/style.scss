@@ -712,7 +712,78 @@ h6 {
   margin-bottom: 0;
 }
 
+////////////////////
+// SERVICE.HTML
+////////////////////
+
+.service-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  background: url(images/service-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.servise-intro__title {
+  text-transform: uppercase;
+  font-size: 40px;
+  color: $orange-color;
+}
+
+.section-intro-pos {
+  margin: 70px 0;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-input {
+  width: 60%;
+}
+
+.user-input {
+  height: 50px;
+  background: $inputs-color;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 20px;
+}
+
+.user-input:focus {
+  outline: none;
+}
+
+.user-input::placeholder {
+  color: #e3e3e3;
+}
+
+.user-form__input {
+  margin-bottom: 50px;
+}
+
+.login {
+  margin-bottom: 100px;
+}
+
+////////////////////
+// REGISTRATION.HTML
+////////////////////
+
+.reg-form-pos {
+  margin: 70px 0;
+}
+
+///////////////////
 // MEDIA
+///////////////////
 
 @media (max-width: 1200px) {
   .history-slider {
@@ -731,6 +802,10 @@ h6 {
 
   .history-slide {
     margin: 0 10px;
+  }
+
+  .user-input {
+    width: 80%;
   }
 }
 
@@ -818,6 +893,18 @@ h6 {
   .feedback-popup__close {
     right: 40px;
   }
+
+  .user-input {
+    width: 90%;
+  }
+
+  .serial-numb__title {
+    width: 60%;
+  }
+
+  .serial-numb__subtitle {
+    width: 80%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -843,6 +930,9 @@ h6 {
 @media (max-width: 400px) {
   .history-slide__text {
     font-size: 15px;
+  }
+  .serial-numb__title {
+    width: 80%;
   }
 }
 

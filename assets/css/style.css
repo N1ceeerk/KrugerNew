@@ -865,6 +865,94 @@ h6 {
   margin-bottom: 0;
 }
 
+.service-intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 400px;
+  width: 100%;
+  background: url(images/service-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.servise-intro__title {
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #faae02;
+}
+
+.section-intro-pos {
+  margin: 70px 0;
+}
+
+.user-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user-input {
+  width: 60%;
+}
+
+.user-input {
+  height: 50px;
+  background: #8a8a8a;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 20px;
+}
+
+.user-input:focus {
+  outline: none;
+}
+
+.user-input::-webkit-input-placeholder {
+  color: #e3e3e3;
+}
+
+.user-input:-ms-input-placeholder {
+  color: #e3e3e3;
+}
+
+.user-input::-ms-input-placeholder {
+  color: #e3e3e3;
+}
+
+.user-input::placeholder {
+  color: #e3e3e3;
+}
+
+.user-form__input {
+  margin-bottom: 50px;
+}
+
+.login {
+  margin-bottom: 100px;
+}
+
+.reg-form-pos {
+  margin: 70px 0;
+}
+
 @media (max-width: 1200px) {
   .history-slider {
     width: 85%;
@@ -880,6 +968,9 @@ h6 {
   }
   .history-slide {
     margin: 0 10px;
+  }
+  .user-input {
+    width: 80%;
   }
 }
 
@@ -974,6 +1065,15 @@ h6 {
   .feedback-popup__close {
     right: 40px;
   }
+  .user-input {
+    width: 90%;
+  }
+  .serial-numb__title {
+    width: 60%;
+  }
+  .serial-numb__subtitle {
+    width: 80%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -996,6 +1096,9 @@ h6 {
 @media (max-width: 400px) {
   .history-slide__text {
     font-size: 15px;
+  }
+  .serial-numb__title {
+    width: 80%;
   }
 }
 

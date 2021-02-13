@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kruger | Standardradarsystem</title>
+    <title>Kruger | Bedienung</title>
 
     <!-- style.css -->
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -29,45 +29,57 @@
 
     <!-- MAIN -->
     <main class="main">
-      <div class="section-intro">
-        <h2 class="section-title long-intro-title">Standardradarsystem</h2>
-      </div>
+      <section class="service-intro">
+        <h1 class="servise-intro__title">Bedienung</h1>
+      </section>
 
-      <div class="goods">
-        <div class="goods-card goods-item-row-2">
-          <div class="goods-picture">
-            <img
-              class="goods-picture__img"
-              src="images/radar-1.jpg"
-              alt="goods image"
-            />
-          </div>
-          <div class="goods-content">
-            <h3 class="goods-content__name">Sicheres Fahren</h3>
-            <p class="goods-content__about">
-              Keine toten Winkel - selbstbewusster Fahrer. Die
-              fortschrittlichsten 79-MHz-Mikrowellensensoren auf dem Markt geben
-              dem Fahrer einen sechsten Sinn
-            </p>
-          </div>
+      <section class="serial-numb">
+        <div class="section-intro section-intro-pos">
+          <h2 class="section-title long-intro-title serial-numb__title">
+            Überprüfung der Seriennummer
+          </h2>
+          <p
+            class="section-subtitle section-intro__subtitle serial-numb__subtitle"
+          >
+            Geben Sie den Produktnamen und die Seriennummer ein, um die<br />
+            Originalität zu überprüfen
+          </p>
         </div>
-        <div class="goods-card">
-          <div class="goods-picture">
-            <img
-              class="goods-picture__img"
-              src="images/radar-2.jpg"
-              alt="goods image"
-            />
-          </div>
-          <div class="goods-content">
-            <h3 class="goods-content__name">Luxusfahrt</h3>
-            <p class="goods-content__about">
-              Nicht nur ein teures Auto Jedes Fahrzeug kann zusätzliche Augen
-              für tote Winkel haben
-            </p>
-          </div>
+
+        <form class="user-form" action="#">
+          <input
+            class="user-input user-form__input"
+            type="text"
+            placeholder="Modell"
+          />
+          <input
+            class="user-input user-form__input"
+            type="text"
+            placeholder="Seriennummer"
+          />
+          <button class="button" type="submit">überprüfen</button>
+        </form>
+      </section>
+
+      <section class="login">
+        <div class="section-intro section-intro-pos">
+          <h2 class="section-title long-intro-title">ins Konto einloggen</h2>
         </div>
-      </div>
+
+        <form class="user-form" action="#">
+          <input
+            class="user-input user-form__input"
+            type="text"
+            placeholder="Anmeldung"
+          />
+          <input
+            class="user-input user-form__input"
+            type="text"
+            placeholder="Passwort"
+          />
+          <button class="button" type="submit">Betreten</button>
+        </form>
+      </section>
 
       <section class="questions">
         <h2 class="questions__title">Haben Sie noch Fragen?</h2>

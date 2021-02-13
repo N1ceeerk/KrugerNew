@@ -102,19 +102,41 @@ closeMenuBtn.addEventListener("click", toggleMenu);
 // Эвент при котором нажатие на оверлей закрывает меню
 overlayMenu.addEventListener("click", toggleMenu);
 
-// Эвент открытия окна feedback
-feedbackBtn.addEventListener("click", toggleFeedback);
+if (feedbackBtn) {
+  // Эвент открытия окна feedback
+  feedbackBtn.addEventListener("click", toggleFeedback);
 
-// Эвент закрытия окна feedback при нажатии на крестик
-feedbackCloseBtn.addEventListener("click", toggleFeedback);
+  // Эвент закрытия окна feedback при нажатии на крестик
+  feedbackCloseBtn.addEventListener("click", toggleFeedback);
 
-// Эвент закрытия окна feedback при нажатии на оверлей
-feedbackOverlay.addEventListener("click", toggleFeedback);
+  // Эвент закрытия окна feedback при нажатии на оверлей
+  feedbackOverlay.addEventListener("click", toggleFeedback);
 
-// Радио-счетчик на состояние модального окна feedback
-let isFeedbackModalOpen = false;
+  // Радио-счетчик на состояние модального окна feedback
+  let isFeedbackModalOpen = false;
 
-// Радио-счетчик на состояние модального окна feedback
+  // Фукнция открытия feedback окна
+  function toggleFeedback() {
+    if (!isFeedbackModalOpen) {
+      feedbackContent.classList.remove("feedback-popup-out");
+      feedbackContent.classList.add("feedback-popup-in");
+      feedbackOverlay.classList.remove("feedback-overlay-fadeOut");
+      feedbackOverlay.classList.add("feedback-overlay-fadeIn");
+      isFeedbackModalOpen = true;
+      body.classList.toggle("feedback-popup_show");
+    } else {
+      feedbackContent.classList.add("feedback-popup-out");
+      feedbackOverlay.classList.add("feedback-overlay-fadeOut");
+      isFeedbackModalOpen = false;
+
+      setTimeout(() => {
+        body.classList.toggle("feedback-popup_show");
+      }, 200);
+    }
+  }
+}
+
+// Радио-счетчик на состояние модального окна меню
 let isMenuOpen = false;
 
 // Фукнция, которая отвечает за присвоение и убирание класса в зависимости
@@ -138,25 +160,5 @@ function toggleMenu() {
     setTimeout(() => {
       body.classList.toggle("menu_show");
     }, 500);
-  }
-}
-
-// Фукнция открытия feedback окна
-function toggleFeedback() {
-  if (!isFeedbackModalOpen) {
-    feedbackContent.classList.remove("feedback-popup-out");
-    feedbackContent.classList.add("feedback-popup-in");
-    feedbackOverlay.classList.remove("feedback-overlay-fadeOut");
-    feedbackOverlay.classList.add("feedback-overlay-fadeIn");
-    isFeedbackModalOpen = true;
-    body.classList.toggle("feedback-popup_show");
-  } else {
-    feedbackContent.classList.add("feedback-popup-out");
-    feedbackOverlay.classList.add("feedback-overlay-fadeOut");
-    isFeedbackModalOpen = false;
-
-    setTimeout(() => {
-      body.classList.toggle("feedback-popup_show");
-    }, 200);
   }
 }
