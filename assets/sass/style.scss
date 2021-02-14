@@ -568,9 +568,6 @@ h6 {
   transform: scale(1);
 }
 
-.feedback-popup_show .feedback-content {
-}
-
 .feedback-popup-in {
   animation: feedbackPopupIn 0.5s ease forwards;
 }
@@ -832,6 +829,53 @@ h6 {
   visibility: visible;
 }
 
+.user-checkboxes {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+
+.user-form-input-last {
+  margin-bottom: 40px;
+}
+
+.check-items {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.checkbox-span {
+  color: #34495e;
+  padding: 0.5rem 0.25rem;
+}
+
+.checkbox-input {
+  height: 25px;
+  width: 25px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  outline: none;
+  transition-duration: 0.3s;
+  background-color: $card-color;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.checkbox-input:checked {
+  border: 2px solid $card-color;
+  background-color: $orange-color;
+}
+
+.user-form__checkboxes {
+  margin-bottom: 40px;
+}
+
 ////////////////////
 // REGISTRATION.HTML
 ////////////////////
@@ -864,6 +908,10 @@ h6 {
   }
 
   .user-input {
+    width: 80%;
+  }
+
+  .user-checkboxes {
     width: 80%;
   }
 }
@@ -963,6 +1011,20 @@ h6 {
 
   .serial-numb__subtitle {
     width: 80%;
+  }
+
+  .checkbox-span {
+    white-space: nowrap;
+  }
+
+  .user-checkboxes {
+    width: 90%;
+    white-space: nowrap;
+    flex-wrap: wrap;
+  }
+
+  .check-items {
+    margin-bottom: 20px;
   }
 }
 

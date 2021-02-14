@@ -49,7 +49,11 @@
           </p>
         </div>
 
-        <form class="user-form" onsubmit="toggleValidatePopup(); return false;" action="#">
+        <form
+          class="user-form"
+          onsubmit="toggleValidatePopup(); return false;"
+          action="#"
+        >
           <input
             class="user-input user-form__input"
             type="text"
@@ -62,9 +66,7 @@
             placeholder="Seriennummer"
             required
           />
-          <button class="button" type="submit"">
-            überprüfen
-          </button>
+          <button class="button" type="submit">überprüfen</button>
         </form>
       </section>
 
@@ -81,11 +83,38 @@
             required
           />
           <input
-            class="user-input user-form__input"
+            class="user-input user-form__input user-form-input-last"
             type="text"
             placeholder="Passwort"
             required
           />
+
+          <div class="user-checkboxes user-form__checkboxes">
+            <label class="check-item-full-assess check-items">
+              <input
+                class="checkbox-input"
+                type="checkbox"
+                name="full-assess"
+              />
+              <span>Voller zugriff</span>
+            </label>
+            <label class="check-item-full-assess check-items">
+              <input
+                class="checkbox-input"
+                type="checkbox"
+                name="full-assess"
+              />
+              <span>Einchecken</span>
+            </label>
+            <label class="check-item-full-assess check-items">
+              <input
+                class="checkbox-input"
+                type="checkbox"
+                name="full-assess"
+              />
+              <span>Genehmigung</span>
+            </label>
+          </div>
           <button class="button" type="submit">Betreten</button>
         </form>
       </section>
@@ -172,7 +201,12 @@
           <p class="serial-popup-side-top__text">Lorem ipsum</p>
         </div>
         <div class="serial-popup-side-bottom serial-side">
-          <a class="serial-popup-side-bottom__close" href="#" onclick="return false;">Close</a>
+          <a
+            class="serial-popup-side-bottom__close"
+            href="#"
+            onclick="return false;"
+            >Close</a
+          >
         </div>
       </div>
     </div>
